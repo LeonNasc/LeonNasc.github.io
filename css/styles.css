@@ -1,0 +1,47 @@
+iframe{
+  border-radius:0.3em;
+  border:0px;
+  width:100%;
+  height:100%;
+}
+
+#sidebar{
+  width:20vw;
+  height:100vh;
+  float:left;
+}
+
+#main-content{
+  margin-left: 20vw;
+  margin-right:0;
+  width:79vw;
+  height:99vh;
+}
+
+#cover{
+  overflow:hidden;
+  color:white;
+  vertical-align: center;
+  background-color:#cccccc;
+  /* background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url("../img/cover-bg.jpg"); */
+}
+
+#cover > main{
+  border-radius:1em;
+  padding:1em;
+  background:rgba(128,128,128,0.3);
+}
+
+#minhacara{
+  float:left;
+  height:100%;
+}
+
+#minhacara > img{
+  vertical-align: center;
+  margin-right:20px;
+  border-radius:100px;
+  width:200px;
+  height:200px;
+  overflow:hidden;
+}

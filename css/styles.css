@@ -1,3 +1,29 @@
+/*----------------Responsividade da fonte ----------------*/
+html {
+  font-size: 12px;
+}
+@media screen and (min-width: 320px) {
+  html {
+    font-size: calc(12px + 6 * ((100vw - 320px) / 680));
+  }
+}
+@media screen and (min-width: 1000px) {
+  html {
+    font-size: 16px;
+  }
+}
+/*--------- Estilização -----------*/
+
+body{
+  font-family:'Open Sans', sans-serif;
+  overflow-x:hidden;
+}
+
+footer{
+  text-align:center;
+  background-color:rgba(255,255,255,0)
+}
+
 iframe{
   border-radius:0.3em;
   border:0px;
@@ -5,43 +31,91 @@ iframe{
   height:100%;
 }
 
-#sidebar{
-  width:20vw;
-  height:100vh;
-  float:left;
+a:link,a:visited,a:hover,a:active {
+    text-decoration: none;
+    color: black;
+    padding: 2%;
+}
+
+#topbar{
+  padding-top:2%;
+  padding-bottom:2%;
+  border-bottom: 1px solid #DEDDED;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.13), 0 2px 3px rgba(0,0,0,0.27);
+  width:100vw;
+  height:10vh;
+  z-index:2;
+  font-family: monospace;
+}
+
+#nav-links{ 
+  text-align:center;  
+}
+
+#nav-links > div{
+  display:inline;
 }
 
 #main-content{
-  margin-left: 20vw;
-  margin-right:0;
-  width:79vw;
-  height:99vh;
+  width:100vw;
+  height:90vh;
 }
 
 #cover{
-  overflow:hidden;
-  color:white;
-  vertical-align: center;
-  background-color:#cccccc;
-  /* background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url("../img/cover-bg.jpg"); */
+  margin-top: 5%;
+  width:75vw;
+  margin:0 auto;
 }
 
-#cover > main{
-  border-radius:1em;
+#cover > main{  
+  border-radius:0.3em;
   padding:1em;
-  background:rgba(128,128,128,0.3);
 }
 
 #minhacara{
-  float:left;
+  margin:0 auto;
+  text-align:center;
   height:100%;
 }
 
-#minhacara > img{
+.circled-img{
   vertical-align: center;
   margin-right:20px;
   border-radius:100px;
+  border: 0.5px solid rgb(200,200,200,0.3);
   width:200px;
   height:200px;
   overflow:hidden;
+}
+
+.card{
+  margin:0.3em 0 0.3em 0;
+  padding:1.5em;
+  border-radius:0;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.5s cubic-bezier(.25,.8,.25,1);
+}
+
+.card .card:hover, .btn:hover{
+  box-shadow: 0 3px 6px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+}
+#contactlist{
+  margin:0 auto;
+  width:50%;
+  padding:3%
+}
+
+#projetos-header,#sobre{
+  width:75vw;
+  margin: 0 auto;
+}
+
+#projetos-header  a{
+  color:white;
+  padding:1%;
+}
+
+.btn{
+  
+  border-radius:0;
 }

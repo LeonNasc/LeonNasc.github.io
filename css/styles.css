@@ -15,7 +15,7 @@ html {
 /*--------- Estilização -----------*/
 
 body{
-  font-family:'Open Sans', sans-serif;
+  font-family:'Montserrat', sans-serif;
   overflow-x:hidden;
 }
 
@@ -80,6 +80,7 @@ a:link,a:visited,a:hover,a:active {
 
 .circled-img{
   vertical-align: center;
+  object-fit:cover;
   margin-right:20px;
   border-radius:100px;
   border: 0.5px solid rgb(200,200,200,0.3);
@@ -118,4 +119,8 @@ a:link,a:visited,a:hover,a:active {
 .btn{
   
   border-radius:0;
+}
+
+.container-fluid{
+  padding:0;
 }

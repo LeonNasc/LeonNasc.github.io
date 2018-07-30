@@ -15,7 +15,7 @@ html {
 /*--------- Estilização -----------*/
 
 body{
-  font-family:'Montserrat', sans-serif;
+  font-family:'Open Sans', sans-serif;
   overflow-x:hidden;
 }
 
@@ -31,69 +31,66 @@ iframe{
   height:100%;
 }
 
-a:link,a:visited,a:hover,a:active {
-    text-decoration: none;
-    color: black;
-    padding: 2%;
+#topbar a{
+  text-decoration: none;
+  color: black;
+  padding: 2%;
 }
 
 #topbar{
   padding-top:2%;
   padding-bottom:2%;
-  border-bottom: 1px solid #DEDDED;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.13), 0 2px 3px rgba(0,0,0,0.27);
   width:100vw;
-  height:10vh;
+  min-height:10vh;
   z-index:2;
   font-family: monospace;
 }
 
 #nav-links{ 
   text-align:center;  
+  width:100%;
 }
 
 #nav-links > div{
   display:inline;
 }
 
+#main,#projetos-header,#sobre,#contact{
+  margin:0 auto;
+  width: 80vw;
+  padding:2.5em;
+}
+
 #main-content{
-  width:100vw;
   height:90vh;
 }
 
-#cover{
-  margin-top: 5%;
-  width:75vw;
-  margin:0 auto;
+.cover-heading{
+  font-family:'Libre Baskerville', sans-serif
 }
 
 #cover > main{  
-  border-radius:0.3em;
-  padding:1em;
+  padding:2.5em;
 }
 
 #minhacara{
   margin:0 auto;
-  text-align:center;
-  height:100%;
 }
 
 .circled-img{
   vertical-align: center;
   object-fit:cover;
-  margin-right:20px;
-  border-radius:100px;
+  border-radius:5em;
   border: 0.5px solid rgb(200,200,200,0.3);
-  width:200px;
-  height:200px;
+  width:10em;
+  height:10em;
   overflow:hidden;
 }
 
 .card{
-  margin:0.3em 0 0.3em 0;
-  padding:1.5em;
-  border-radius:0;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  border: 1px solid black;
+  border-radius:0em !important;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   transition: all 0.5s cubic-bezier(.25,.8,.25,1);
 }
 
@@ -106,21 +103,26 @@ a:link,a:visited,a:hover,a:active {
   padding:3%
 }
 
-#projetos-header,#sobre{
-  width:75vw;
-  margin: 0 auto;
-}
 
 #projetos-header  a{
   color:white;
   padding:1%;
 }
 
-.btn{
-  
+.btn{  
   border-radius:0;
 }
 
 .container-fluid{
   padding:0;
+}
+
+#skillz{
+  padding:1em;
+  font-family:monospace;
+  font-size:smaller
+}
+
+#skillz li{
+  list-style-type: ' ';
 }

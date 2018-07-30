@@ -123,6 +123,7 @@ iframe{
   font-size:smaller
 }
 
-#skillz li{
-  list-style-type: ' ';
+#skillz ul{
+  list-style-type: "";
+  padding-left: 0;
 }
